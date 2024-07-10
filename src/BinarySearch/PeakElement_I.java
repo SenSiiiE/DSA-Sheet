@@ -2,7 +2,8 @@ package BinarySearch;
 
 public class PeakElement_I {
     public static void main(String[] args) {
-
+        int[] a = {1,2,3,1};
+        System.out.println(peakElement(a, a.length));
     }
 
     static int peakElement(int[] a, int n){
@@ -25,5 +26,6 @@ public class PeakElement_I {
                 e = mid - 1;
             }
         }
+        return -1;
     }
 }
